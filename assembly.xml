@@ -5,10 +5,6 @@
     </formats>
     <fileSets>
         <fileSet>
-            <directory>./</directory>
-            <includes>
-                <include>*</include>
-            </includes>
             <excludes>
                 <exclude>target/</exclude>
                 <exclude>*.zip</exclude>
