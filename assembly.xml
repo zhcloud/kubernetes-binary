@@ -1,15 +1,20 @@
 <assembly>
-  <id>release</id>
-  <formats>
-    <format>zip</format>
-  </formats>
-  <fileSets>  
-    <fileSet>  
-      <directory>./</directory>  
-      <includes>  
-          <include>*.*</include> 
-      </includes>  
-      <outputDirectory>\</outputDirectory>  
-    </fileSet>  
-  </fileSets>  
+    <id>release</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>./</directory>
+            <includes>
+                <include>*</include>
+            </includes>
+            <excludes>
+                <exclude>target/</exclude>
+                <exclude>*.zip</exclude>
+                <exclude>*.xml</exclude>
+            </excludes>
+            <outputDirectory>\</outputDirectory>
+        </fileSet>
+    </fileSets>
 </assembly>
